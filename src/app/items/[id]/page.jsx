@@ -1,6 +1,7 @@
 import { dbConnect } from "@/lib/dbConnect";
 import { ObjectId } from "mongodb";
 import Link from "next/link";
+import { notFound } from "next/navigation";
 
 export default async function ProductDetailsPage({ params }) {
   const resolvedParams = await params;
@@ -8,6 +9,11 @@ export default async function ProductDetailsPage({ params }) {
 
   // console.log("Product ID:", id);
 
+  const isValidId = /^[0-9a-fA-F]{24}$/.test(id);
+
+    if (!isValidId) {
+        notFound(); // This triggers your custom not-found.js page
+    }
   const collection = await dbConnect("products");
   const product = await collection.findOne({ _id: new ObjectId(id) });
 

@@ -6,7 +6,7 @@ const Logo = () => {
   return (
     <Link
       href="/"
-      className="logo flex items-center gap-2 text-2xl font-bold"
+      className="logo flex items-center gap-2 text-2xl font-bold "
     >
       <div className="relative w-20 h-20"> {/* Tailwind sets width/height */}
         <Image

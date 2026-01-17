@@ -70,9 +70,8 @@ function LoginForm() {
           </p>
         </form>
         <button
-          type="button"
           onClick={handleDemoLogin}
-          className="w-full mt-2 bg-gray-200 text-gray-800 py-2 rounded"
+          className="w-full btn btn-accent mt-2  text-gray-800 py-2 rounded"
         >
           Demo Login
         </button>
