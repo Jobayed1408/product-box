@@ -36,7 +36,7 @@ This project was developed as part of **SCIC-12 Assignment 9 (Job Task)**.
 
 Email: jamil@uddin.com
 
-Password: 123456
+Password: jamil
 
 
 (You can also log in using Google if enabled.)
