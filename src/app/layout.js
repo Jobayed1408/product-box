@@ -1,14 +1,12 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/layouts/Navbar";
+import Footer from "@/components/layouts/Footer";
+import { Toaster } from "react-hot-toast";
+import NextAuthProvider from "@/provider/NextAuthProvider";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const poppins = Poppins({
+  weight: ["100", "200", "400", "500", "800"],
 });
 
 export const metadata = {
@@ -19,11 +17,27 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+      <body className={`${poppins.className} antialiased flex flex-col min-h-screen`}>
+
+        <NextAuthProvider >
+          <Toaster position="top-right" />
+          <header className="w-19/20 md:w-10/12 mx-auto">
+            <Navbar />
+          </header>
+
+          <main className="flex-1 py-2 w-19/20 md:w-10/12 mx-auto">
+
+            {children}
+
+          </main>
+
+          <footer className="w-19/20 md:w-11/12 mx-auto">
+            <Footer />
+          </footer>
+        </NextAuthProvider>
+
       </body>
     </html>
   );
 }
+

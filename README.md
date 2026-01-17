@@ -1,36 +1,151 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🛒 Product-Box
 
-## Getting Started
+Product-Box is a simple and modern e-commerce-style application built using **Next.js 15/16 (App Router)**.  
+The project demonstrates public and protected routing, authentication, item listing, item details, and item management features.
 
-First, run the development server:
+This project was developed as part of **SCIC-12 Assignment 9 (Job Task)**.
 
+---
+
+## 🔗 Live & Repository Links
+
+- **Live Site:** https://your-project-name.vercel.app  
+- **GitHub Repository:** https://github.com/your-username/product-box  
+
+---
+
+## 🔐 Login Credentials (Mock / Demo)
+
+# 🛒 Product-Box
+
+Product-Box is a simple and modern e-commerce-style application built using **Next.js 15/16 (App Router)**.  
+The project demonstrates public and protected routing, authentication, item listing, item details, and item management features.
+
+This project was developed as part of **SCIC-12 Assignment 9 (Job Task)**.
+
+---
+
+## 🔗 Live & Repository Links
+
+- **Live Site:** https://your-project-name.vercel.app  
+- **GitHub Repository:** https://github.com/your-username/product-box  
+
+---
+
+## 🔐 Login Credentials (Mock / Demo)
+
+Email: jamil@uddin.com
+
+Password: 123456
+
+
+(You can also log in using Google if enabled.)
+
+---
+
+## 🧩 Core Features
+
+### 1️⃣ Landing Page (Public)
+- Fully public landing page
+- Includes **7 relevant sections** (excluding Navbar & Footer)
+- Modern UI built with Tailwind CSS
+- Navbar includes navigation to:
+  - Home
+  - Items
+  - Login
+
+---
+
+### 2️⃣ Authentication
+- **Primary:** Credential-based login
+- **Optional (Implemented):** NextAuth.js with Google login
+- Authentication features:
+  - Login using email & password
+  - Credentials stored securely using cookies/session
+  - Redirect to intended/private page after login
+  - Logout functionality
+  - User avatar shown in navbar when logged in
+
+---
+
+### 3️⃣ Item List Page (Public)
+- Publicly accessible
+- Fetches items from backend API
+- Displays:
+  - Product image
+  - Name
+  - Short description
+  - Price
+  - Category
+- Category-wise filtering
+- Search functionality
+
+---
+
+### 4️⃣ Item Details Page (Public)
+- Shows full details of a single product
+- Dynamic route using product ID
+- Displays:
+  - Image
+  - Name
+  - Description
+  - Price
+  - Category
+  - Ratings
+  - Stock & Sold info
+
+---
+
+### 5️⃣ Protected Page: Add Item (Optional Requirement Implemented)
+- Accessible **only when logged in**
+- Redirects unauthenticated users to login
+- Add item form includes:
+  - Name
+  - Image URL
+  - Category
+  - Price
+  - Stock
+  - Description
+- Saves item to database
+- Toast notification shown on successful product creation
+
+---
+
+## 🛣️ Route Summary
+
+| Route | Access | Description |
+|-----|------|------------|
+| `/` | Public | Landing Page |
+| `/login` | Public | Login Page |
+| `/items` | Public | Item List Page |
+| `/items/[id]` | Public | Item Details Page |
+| `/add-item` | Protected | Add New Item |
+| `/api/products` | API | Fetch products |
+| `/api/categories` | API | Fetch categories |
+
+---
+
+## 🛠️ Technologies Used
+
+- **Next.js 15/16 (App Router)**
+- **NextAuth.js**
+- **MongoDB**
+- **Tailwind CSS**
+- **DaisyUI**
+- **Express-style API routes**
+- **Vercel** (Deployment)
+
+---
+
+## ⚙️ Setup & Installation
+
+### 1️⃣ Clone the repository
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+git clone https://github.com/your-username/product-box.git
+cd product-box
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### 👨‍💻 Author
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Mohammad Jobayed
+CSE Graduate | Aspiring Full-Stack Developer
