@@ -9,8 +9,8 @@ This project was developed as part of **SCIC-12 Assignment 9 (Job Task)**.
 
 ## 🔗 Live & Repository Links
 
-- **Live Site:** https://your-project-name.vercel.app  
-- **GitHub Repository:** https://github.com/your-username/product-box  
+- **Live Site:** https://product-box-tan.vercel.app/
+- **GitHub Repository:** https://github.com/Jobayed1408/product-box
 
 ---
 
@@ -25,12 +25,6 @@ This project was developed as part of **SCIC-12 Assignment 9 (Job Task)**.
 
 ---
 
-## 🔗 Live & Repository Links
-
-- **Live Site:** https://your-project-name.vercel.app  
-- **GitHub Repository:** https://github.com/your-username/product-box  
-
----
 
 ## 🔐 Login Credentials (Mock / Demo)
 
